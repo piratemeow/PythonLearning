@@ -13,7 +13,7 @@ def math(a,b):
         return ans
     
 
-a = int( input())
+a = int(input())
 b = int(input())
 print(math(a,b))
 
@@ -33,3 +33,11 @@ print(x()) #2
 print(x()) #3
 print(x()) #4
 #As the inner function does not call the outer count so every time it keeps the new count value
+
+
+def funn():
+    def p():
+        print("Hello")
+    return p()
+
+funn() # This will print Hello
