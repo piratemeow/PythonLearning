@@ -13,7 +13,7 @@ print(num[-1])
 
 # The ways to combine two lists together
 num2 = num
-num = num+name
+num = num+name # This will create a new list and assign it to num variable 
 print(num)
 print(num2)
 num2.extend([1,2,3])
@@ -50,11 +50,39 @@ item2 = item[:]
 stri = ['1','b','fss']
 #while sorting the function gives the capital letter lower value to improve this 
 
-stri.sort(key = str.lower)
+stri.sort(key = str.lower) # this will change the stri list
 
 
 new_item=sorted(stri,key=str.lower) # this will create a sorted list from stri list but wont change the stri list
 
 
+lis = [1+2, 'a'*4 , 'gekko'] # this will create a list of 3 items
 
+print(lis) # [3, 'aaaa', 'gekko']
+
+#Splicing   
+liss = lis[1:2] # this will create a list of 1 item the staring index is included but the ending index is not.
+print(liss) # ['aaaa'] 
+
+del lis[1] # this will delete the item at index 1
+lis2 = lis[:] # this will copy the list to another list
+lis2 = lis # this will copy the list to another list but if we make any changes to lis2 it will reflect in lis also. Cause it only copies the reference of the list not the list itself
+
+lis2 = list(lis) # This will copy the lis elements to lis2 and will not refernce to lis
+
+
+# Some methods of list
+
+# append() - Adds an element at the end of the list
+# clear() - Removes all the elements from the list
+# copy() - Returns a copy of the list
+# count() - Returns the number of elements with the specified value
+# extend() - Add the elements of a list (or any iterable), to the end of the current list
+# index() - Returns the index of the first element with the specified value
+# insert() - Adds an element at the specified position
+# pop() - Removes the element at the specified position
+# remove() - Removes the item with the specified value
+# reverse() - Reverses the order of the list
+# sort() - Sorts the list
+# The list() Constructor - It is also possible to use the list() constructor to make a new list.
 
